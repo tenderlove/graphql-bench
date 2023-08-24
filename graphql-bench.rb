@@ -19,5 +19,7 @@ Benchmark.ips { |x|
   doc = ARGF.read
 
   x.report("graphql") { GraphQL.parse(doc) }
+
+  x.compare!
 }
 
